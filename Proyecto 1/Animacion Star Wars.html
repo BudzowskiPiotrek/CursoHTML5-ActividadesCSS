@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: black;
+            color: rgb(232, 173, 10);
+        }
+
+        .title {
+            text-align: center;
+            font-size: 3em;
+            margin-top: 300px;
+            animation-duration: 3s;
+            animation-name: texto;
+            animation-timing-function: ease-in-out;
+            opacity: 0;
+        }
+
+        .sliding {
+            width: 40%;
+            left: 30%;
+            margin: 0px auto;
+            font-size: 2em;
+            position: fixed;
+            top: 100%;
+            animation-name: textoDos;
+            animation-timing-function: linear;
+            animation-delay: 3s;
+            animation-duration: 25s;
+            animation-iteration-count: 1;
+            transform: perspective(300px) rotateX(15deg);
+        }
+
+        .sliding p{
+            text-align: justify;
+        }
+
+        @keyFrames texto{
+
+            0% {
+                opacity: 1;
+            }
+            100%{
+                opacity: 0;
+            }
+        }
+
+        @KeyFrames textoDos{
+            50%{
+                opacity: 1;
+            }
+            100%{
+                top:-200%;
+                opacity: 0;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1 class="title"> Episodio III</h1>
+    <div class="sliding">
+        <h1>LA VENGANZA DEL SITH</h1>
+        <p> ¡Guerra! La República se derrumba
+            bajo los ataques del despiadado
+            Señor Sith, el Conde Dooku.
+            Hay héroes en ambos bandos.
+            El mal está en todas partes.
+            En una sorprendente maniobra, el
+            malvado líder de los androides, el General
+            Grievous, ha entrado en la
+            Capital de la República y secuestrado
+            al Canciller Palpatine, el líder
+            del Senado Galáctico.</p>
+        <p>Mientras el Ejército Separatista Androide
+            intenta huir de la capital
+            sitiada con su valioso
+            rehen, dos Caballeros Jedi dirigen una
+            misión desesperada para rescatar al
+            Canciller cautivo…
+        </p>
+    </div>
+
+
+</body>
+
+</html>

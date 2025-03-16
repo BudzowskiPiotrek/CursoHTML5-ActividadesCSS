@@ -1,0 +1,47 @@
+*{
+  font-family: 'Times New Roman', Times, serif;
+}
+body {
+  background-color: lightgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background-color: white;
+  width: 70%;
+  height: 50vh;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 0px;
+  display: block;
+}
+
+table {
+  width: 100%;
+  height: 100%;
+}
+
+td {
+  vertical-align: middle;
+  text-align: center;
+  padding: px;
+  width: 50%;
+}
+
+form {
+  display: inline-block;
+  width: 90%;
+}
+
+#Col1Fil1, #Col2Fil1 {
+  display: none;
+}
+
+#Col2Fil2,#Col1Fil1 {
+  background-color: lightblue;
+  border-radius: 10px; 
+}

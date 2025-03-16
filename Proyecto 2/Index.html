@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro/Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <table>
+            <tr>
+                <td id="Col1Fil1">
+                    <form id="registroForm">
+                        <h2>Registro</h2>
+                        <label for="nombreRegistro">Nombre:</label><br>
+                        <input type="text" id="nombreRegistro" name="nombreRegistro"><br><br>
+                        <label for="emailRegistro">Email:</label><br>
+                        <input type="email" id="emailRegistro" name="emailRegistro"><br><br>
+                        <label for="passwordRegistro">Contraseña:</label><br>
+                        <input type="password" id="passwordRegistro" name="passwordRegistro"><br><br>
+                        <button type="submit">Registrar</button>
+                    </form>
+                </td>
+                <td id="Col2Fil1">
+                    <button id="loginBoton">Login</button>
+                </td>
+            </tr>
+            <tr>
+                <td id="Col1Fil2">
+                    <button id="registroBoton">Registro</button>
+                </td>
+                <td id="Col2Fil2">
+                    <form id="loginForm">
+                        <h2>Login</h2>
+                        <label for="emailLogin">Email:</label><br>
+                        <input type="email" id="emailLogin" name="emailLogin"><br><br>
+                        <label for="passwordLogin">Contraseña:</label><br>
+                        <input type="password" id="passwordLogin" name="passwordLogin"><br><br>
+                        <button type="submit">Iniciar Sesión</button>
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

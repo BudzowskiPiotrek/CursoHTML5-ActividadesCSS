@@ -1,6 +1,6 @@
 function Navigate(index) {
-    let movimiento = document.querySelectorAll('.swiper-slide');
-    movimiento.forEach(slide => {
+    let limpieza = document.querySelectorAll('.swiper-slide');
+    limpieza.forEach(slide => {
         slide.classList.remove('activada'); 
     });
 

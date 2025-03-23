@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <main>
+        <aside>
+            <ul class="links">
+                <li onclick="Navigate(0)"><i class="fa-solid fa-house-chimney"></i>
+                    <p>Home</p>
+                </li>
+                <li onclick="Navigate(1)"><i class="fa-solid fa-user-astronaut"></i>
+                    <p>About Me</p>
+                </li>
+                <li onclick="Navigate(2)"><i class="fa-solid fa-screwdriver-wrench"></i>
+                    <p>Services</p>
+                </li>
+                <li onclick="Navigate(3)"><i class="fa-solid fa-images"></i>
+                    <p>Gallery</p>
+                </li>
+                <li onclick="Navigate(4)"><i class="fa-solid fa-envelope-open-text"></i>
+                    <p>Contact Me</p>
+                </li>
+            </ul>
+        </aside>
+        <!-- Swiper Container (All sections grouped here) -->
+        <div class="Swiper">
+            <div class="SlideContainer">
+
+                <!-- Home Section -->
+                <div class="swiper-slide home-slide">
+                    <div class="HomeContent">
+                        <h1>Hi! I'm Cristobal</h1>
+                        <h2>A Web Developer</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam eveniet amet architecto
+                            reprehenderit vel, repudiandae iste optio aspernatur perferendis at ex, quaerat vero ullam
+                            libero exercitationem dolores inventore tenetur repellendus.</p>
+                    </div>
+                    <div class="SideImg">
+                        <img src="" alt="Cristobal Image">
+                    </div>
+                </div>
+
+                <!-- About Me Section -->
+                <div class="swiper-slide about-slide">
+                    <div class="AboutContent">
+                        <h2>About Me</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam aliquid consequuntur facilis
+                            nemo explicabo maxime unde voluptate saepe, iusto vel? Enim illum ut vero unde, blanditiis
+                            quisquam fuga autem nam?</p>
+                    </div>
+                    <div class="SideImg">
+                        <img src="" alt="About Me Image">
+                    </div>
+                </div>
+
+                <!-- Services Section -->
+                <div class="swiper-slide services-slide">
+                    <div class="ServicesContent">
+                        <h2>Services</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, eum autem soluta vitae
+                            natus obcaecati, sed recusandae tempore, vel ullam doloremque officia saepe reprehenderit
+                            maiores illum? Adipisci tempore maiores beatae.</p>
+                    </div>
+                    <div class="SideImg">
+                        <img src="" alt="Services Image">
+                    </div>
+                </div>
+
+                <!-- Gallery Section -->
+                <div class="swiper-slide gallery-slide">
+                    <div class="GalleryContent">
+                        <h2>Gallery</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut incidunt quae ratione vero
+                            asperiores quis fugiat animi ullam eos illum doloremque repellat assumenda temporibus,
+                            dolorum natus illo, placeat omnis saepe.</p>
+                    </div>
+                    <div class="SideImg">
+                        <img src="" alt="Gallery Image">
+                    </div>
+                </div>
+
+                <!-- Contact Me Section -->
+                <div class="swiper-slide contact-slide">
+                    <div class="ContactContent">
+                        <h2>Contact Me</h2>
+                        <p>If you have any questions or would like to collaborate, feel free to reach out to me. I'd
+                            love to hear from you!</p>
+                    </div>
+                    <div class="SideImg">
+                        <img src="" alt="Contact Me Image">
+                    </div>
+                </div>
+
+            </div> <!-- End SlideContainer -->
+        </div> <!-- End Swiper -->
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

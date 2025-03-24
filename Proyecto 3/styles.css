@@ -14,7 +14,7 @@ aside {
     left: 0;
     width: 20%;
     height: 100vh;
-    background-color: #333;
+    background-color: #444;
     color: white;
     padding: 20px;
     box-sizing: border-box;
@@ -44,7 +44,7 @@ aside .links li:hover {
 }
 
 aside .links li.activeLink {
-    background-color: #555;
+    background-color: #666;
 }
 
 aside .links i {
@@ -53,7 +53,7 @@ aside .links i {
 
 /* Contenedor principal 80% del ancho*/
 .Swiper {
-    background-color: #555;
+    background-color: #666;
     margin-left: 20%;
     height: 100vh;
     padding: 20px;
@@ -63,35 +63,58 @@ aside .links i {
 /* Contenedor secciones */
 .SlideContainer {}
 
-/* Ocultar todas secciones por defeecto */
+
 .swiper-slide {
     display: none;
     animation-duration: 0.8s;
     animation-timing-function: ease-in-out;
     transform-origin: center;
+    position: absolute;
 }
 
-/* Cuando la sección se activa (entra en pantalla) */
+
 .swiper-slide.activada {
+    background-color: #49535b;
+    height: 95vh;
+    width: 77%;
     display: block;
     animation: MoveIn 0.8s ease-in-out forwards;
 }
 
+.swiper-slide.ultima {
+    background-color:  #49535b;; 
+    height: 95vh;
+    width: 77%;
+    display: block;
+    animation: MoveOut 1.0s ease-in-out forwards;
+}
+
+/* Animación de entrada */
 @keyframes MoveIn {
     0% {
         transform: rotateY(90deg) translateX(100%);
-        /* Empieza girando fuera de la pantalla */
-        opacity: 0;
-        /* Opcional, la sección es invisible al principio */
+        opacity: 1;
     }
 
     100% {
         transform: rotateY(0deg) translateX(0);
-        /* Termina en su posición original */
         opacity: 1;
-        /* Se vuelve completamente visible */
     }
 }
+
+/* Animación de salida */
+@keyframes MoveOut {
+    0% {
+        transform: rotateY(0deg) translateX(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: rotateY(90deg) translateX(-25%);
+        opacity: 0;
+    }
+}
+
 
 
 /* Estilo para las imagenes */
